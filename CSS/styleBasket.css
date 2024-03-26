@@ -1,0 +1,218 @@
+body{
+    background-color: var(--vert_clair);
+}
+
+main #tickets_container{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main #tickets_container .ticket_in_kart{
+    background-color: var(--vert);
+    width: 80%;
+    margin-bottom: 10vh;
+}
+
+main #tickets_container .ticket_in_kart .delete_button button{
+    border: none;
+    width: 1.4em;
+    height: 1.4em;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main #tickets_container .ticket_in_kart .kart_ticket_body .ticket {
+    display: flex;
+    flex-direction: row;
+}
+
+main #tickets_container .ticket_in_kart .kart_ticket_body .ticket .ticket_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+}
+
+main #tickets_container .ticket_in_kart .kart_ticket_body .ticket .ticket_header img{
+    width: 20vh;
+    margin-top: 12%;
+    margin-bottom: 18%;
+    border-right: 2px solid white;
+}
+
+main #tickets_container .ticket_in_kart .kart_ticket_body .ticket .ticket_header h2{
+    font-size: 4vh;
+    margin: 0;
+}
+
+main #tickets_container .ticket_in_kart .kart_ticket_body .ticket .ticket_body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+main #tickets_container .ticket_in_kart .kart_ticket_body .ticket .ticket_body p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 12vw;
+    height: 4vh;
+    font-weight: bold;
+}
+
+main #tickets_container .ticket_in_kart .kart_ticket_body .ticket .ticket_body #cities_and_trainstation{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+main #tickets_container .ticket_in_kart .kart_ticket_body .ticket .ticket_body .other_information{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main #tickets_container .ticket_in_kart .kart_ticket_body .ticket .ticket_body .other_information section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main #tickets_container .ticket_in_kart .kart_ticket_body .ticket_price_and_quantity{
+    display: flex;
+    width: 10%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 2vw;
+}
+
+
+main #tickets_container .ticket_in_kart .kart_ticket_body .ticket_price_and_quantity section{
+    display: flex;
+    flex-direction: row;
+}
+
+main #tickets_container .ticket_in_kart .kart_ticket_body .ticket_price_and_quantity .ticket_quantity button{
+    border: none;
+    background: white;
+    height: 100%;
+    width: 33%;
+    padding: none;
+}
+
+main #tickets_container .ticket_in_kart .kart_ticket_body .ticket_price_and_quantity .ticket_quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 6vw;
+    height: 4vh;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main #tickets_container .ticket_in_kart .kart_ticket_body .ticket_price_and_quantity .ticket_price{
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 6vw;
+    height: 4vh;
+    font-weight: bold;
+}
+
+main .buying_container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    height: 10vh;
+    width: 95%;
+    margin-right: 10vw;
+}
+
+main .buying_container .buy button{
+    border: 0;
+    width: 10vw;
+    height: 4vh;
+    border-radius: 4px;
+    background-color: var(--violet);
+    color: white;
+    font-weight: bold;
+}
+
+main .buying_container .total_cost{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 10vw;
+    height: 4vh;
+}
+
+main .buying_container .total_cost p{
+    margin: 0;
+    font-weight: bold;
+    font-size: 0.9vw;
+}
+
+
+#book_container {
+    position: relative;
+    margin-bottom: 20px;
+    margin-left:40%;
+    margin-right: auto;
+    z-index: 1;
+    width: 300px;
+  }
+  
+  form{
+
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #book_button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--violet);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  legend {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+
+  }
+
+  label{
+    font-weight: bold;
+  }  
+  
+  
+  

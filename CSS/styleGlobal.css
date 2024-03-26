@@ -1,0 +1,192 @@
+/*================= VARIABLE ================== */
+:root{
+    --bleu_fonce: #124660;
+    --vert:#8bd59e;
+    --vert_clair: #c7dbc2;
+    --creme: #ebf2fa;
+    --vert_fonce: #1b9476;
+    --jaune: #e9d18a;
+    --gris: #B0B0B0;
+    --violet: rgb(101,88,245);
+    --rouge_fonce: rgb(158, 0, 0);
+}
+/* Utilisation :
+    exemple : body { background-color: var(--bleu_fonce); } #8bd59e
+*/
+
+/*================= BODY ================== */
+
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/*================= HEADER ================== */
+
+header{
+    background-color: var(--bleu_fonce);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header_inner_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#header_inner_container div{
+    border: none;
+}
+
+
+#group_of_elements_container{
+    display: flex;
+}
+
+#header_inner_container > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header_inner_container img{
+    height: 100%;
+}
+#account_container img{
+    height: 66px;
+    cursor: pointer;
+}
+
+#logo_container img{
+    height: 100px;
+    padding: 4%;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+#home_container img{
+    height: 40px;
+    margin-right: 15pt;
+}
+
+#cart_container img{
+    height: 40px;
+}
+
+
+
+#account_container{
+    display: flex;
+    flex-direction: column;
+}
+
+#account_container p{
+    margin: 0;
+    color: var(--creme);
+}
+
+#account_container section{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    border: 1pt solid black;
+    border-radius: 5px;
+}
+
+#account_container section > a{
+    color: black;
+    text-decoration: none;
+    padding: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#account_container section > a:first-of-type{
+    border-bottom: 1pt solid var(--gris);
+}
+
+#account_container section > a:hover{
+    border-radius: 5px;
+    background-color: var(--vert_clair);
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+	background-color: var(--bleu_fonce);
+	color:rgb(255, 255, 255);
+	padding-bottom: 2%;
+}
+h3{
+    margin: 0;
+}
+#footerContainer {
+	display: flex;
+	justify-content: space-around;
+    
+}
+
+
+
+
+.contact_box_container div{
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.lien_footer{
+    color: azure;
+}
+.lien_footer:hover{
+    color: var(--vert);
+}
+.lien_footer:visited{
+    color: var(--vert_fonce);
+}
+
+.faq_box_container{
+    display: flex;
+    flex-direction: column;
+}
+#footerContainer div h3{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.img_footer{
+    height: 25px;
+    padding-right: 5px;
+}
+.phone_box_container p{
+    margin: auto;
+}
+
+.phone_box_container{
+    padding-left: 10px;
+}
+
+/* ================= OTHER ================= */
+
+.hidden{
+    display: none !important;
+}
+
+div{
+    border: none;
+}
+
+fieldset{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.phone_box_container >p{
+    padding-right: 145px;
+}

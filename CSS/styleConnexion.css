@@ -1,0 +1,122 @@
+:root{
+    --bleu_fonce: #124660;
+    --vert:#8bd59e;
+    --vert_clair: #c7dbc2;
+    --creme: #ebf2fa;
+    --vert_fonce: #1b9476;
+    --jaune: #e9d18a;
+}
+
+#content_container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--vert_clair);
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+form{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+form > *{
+    margin: 6vw;
+}
+
+#id_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.label_and_input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4pt;
+    margin-bottom: 8pt;
+}
+
+button{
+    background-color: var(--violet);
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    width: 60%;
+    font-size: 0.8vw;
+    padding: 4px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+input{
+    height: 3vh;
+    width: 30%;
+}
+
+label{
+    font-weight: bold;
+}
+
+#inscription_button{
+    height: 5vh;
+    width: 10vw;
+    font-size: 1vw;
+}
+
+form #id, #mdp{
+    width: 15vw;
+}
+
+form h2{
+    margin: 0;
+    font-size: 2vw;
+}
+
+#connexion_button, #inscription_button{
+    background-color: var(--violet);
+    height: 5vh;
+    width: 10vw;
+    font-size: 1vw;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#inscription_button{
+    text-decoration: none;
+}
+
+#connexion_button:hover{
+    cursor: pointer;
+}
+
+form > img{
+    height: 80px;
+}
+
+form > .label_and_input{
+    margin: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error_message{
+    margin-bottom: 0.8vw;
+    font-weight: normal;
+    font-style: italic;
+    color: var(--rouge_fonce);
+}

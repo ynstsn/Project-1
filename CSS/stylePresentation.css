@@ -1,0 +1,22 @@
+main{
+    padding: 3vw;
+    margin: 0;
+    background: rgb(235, 232, 223);
+}
+
+main p:first-of-type{
+    margin-top: 0;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 5vw;
+}
+
+main > p:last-of-type{
+    margin-bottom: 0;
+    font-style: italic;
+    margin-top: 3vw;
+}
+
+p{
+    width: auto;
+}

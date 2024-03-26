@@ -1,0 +1,132 @@
+body{
+    background-color: var(--vert_clair);
+}
+
+/* STYLE D'UN TICKET */
+
+
+main #tickets_container .ticket{
+    background-color: var(--vert);
+    width: 80%;
+    margin-bottom: 10vh;
+    display: flex;
+}
+
+main #tickets_container .ticket .ticket_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 25%; 
+}
+
+main #tickets_container .ticket .ticket_header img{
+    width: 20vh;
+    margin-top: 12%;
+    margin-bottom: 18%;
+    border-right: 2px solid white;
+}
+
+main #tickets_container .ticket .ticket_header h2{
+    font-size: 4vh;
+    margin: 0;
+}
+main #tickets_container .ticket .ticket_body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+main #tickets_container .ticket .ticket_body p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 12vw;
+    height: 4vh;
+    font-weight: bold;
+}
+
+main #tickets_container .ticket .ticket_body #cities_and_trainstation{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+main #tickets_container .ticket .ticket_body .other_information{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main #tickets_container .ticket .ticket_body .other_information section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main #tickets_container .ticket .ticket_body .other_information .tarif_and_command button{
+    border: 0;
+    height: 4vh;
+    border-radius: 4px;
+    background-color: var(--violet);
+    color: white;
+    font-weight: bold;
+}
+
+/* STYLE GLOBAL DE LA PAGE */
+
+main{
+    display: flex;
+}
+
+#research_section{
+    flex-basis: 20%;
+    background-color: #48b398;
+}
+
+#research_section > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+main #tickets_container {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 80%;
+}
+
+.label_and_input{
+    display: flex;
+    flex-direction: column;
+    margin: 4pt;
+    margin-bottom: 8pt;
+}
+
+#research_section form > button{
+    padding: 4%;
+    background-color: var(--violet);
+    border-radius: 4px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    width: 92%;
+    margin: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#research_section form >button:hover{
+    cursor: pointer;
+}
+
+.label_and_input > select{
+    width: 100%;
+}

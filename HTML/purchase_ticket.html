@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="authors" content="TP2D">
+    <title>MoovCh'p - Tickets</title>
+    <link rel="stylesheet" href="../CSS/styleGlobal.css" />
+    <link rel="stylesheet" href="../CSS/stylePurchase.css" />
+</head>
+<body>
+    <header>
+        
+        <section id="header_inner_container">
+            <div id="account_container" class="picture_container">
+                <p id="user_complete_name"></p>
+                <img src="../media/img/profil.png" alt=""/>
+                <section id="choice_if_not_connected" class="hidden">
+                    <a href="./connexion.html">Se connecter</a>
+                    <a href="./inscription.html">S'inscrire</a>
+                </section>
+                <section id="choice_if_connected" class="hidden">
+                    <a href="./account.html">Mon compte</a>
+                    <a id="logout">Déconnexion</a>
+                </section>
+            </div>
+
+            <div id="logo_container" class="picture_container">
+                <img src="../media/img/logo.png" alt=""/>
+            </div>
+
+
+            <div id="group_of_elements_container">
+                <div id="home_container" class="picture_container">
+                    <a href="../index.html">
+                        <img src="../media/img/home.png" alt=""/>
+                    </a>
+                </div>
+               
+                <div id="cart_container" class="picture_container">
+                    <a href="./kart_page.html">
+                        <img src="../media/img/valise.png" alt=""/>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section id="research_section">
+            <form method="get">
+
+                <fieldset class="label_and_input">
+                    <label for ="city_from">Ville de départ</label>
+                    <select id="city_from" name="city_from"></select>
+                </fieldset>
+                
+                <fieldset class="label_and_input">
+                    <label for ="station_from">Gare de départ</label>
+                    <select id="station_from" name="station_from"></select>
+                </fieldset>
+                
+                <fieldset class="label_and_input">
+                    <label for ="city_to">Ville d'arrivée</label>
+                    <select id="city_to" name="city_to"></select>
+                </fieldset>
+
+                
+                <fieldset class="label_and_input">
+                    <label for ="station_to">Gare d'arrivée</label>
+                    <select id="station_to" name="station_to"></select>
+                </fieldset>
+                
+
+                <fieldset class="label_and_input">
+                    <label for="date">Date du trajet</label>
+                    <input type="date" id="date" name="date"/>
+                </fieldset>
+                
+
+                <fieldset class="label_and_input">
+                    <label for="time_from">Heure de départ aprés</label>
+                    <input type="time" id="time_from" name="time_from"/>
+                </fieldset>
+      
+                <fieldset class="label_and_input">
+                    <label for="time_to">Heure de départ avant </label>
+                    <input type="time" id="time_to" name="time_to"/>
+                </fieldset>
+            
+                <fieldset class="label_and_input">
+                    <label for="time_end">Heure d'arrivée avant </label>
+                    <input type="time" id="time_end" name="time_end"/>
+                </fieldset>
+                
+                <button id="research_button">Rechercher</button>
+            </form>
+            
+        </section>
+        <section id="tickets_container">
+
+
+            <!-- Exemple de structure d'un ticket -->
+
+            <!-- <article class="ticket">
+                <section class="ticket_header">
+                    <h2>Ticket</h2>
+                    <img src="../media/img/logo.png"/>
+                </section>
+                <section class="ticket_body">
+                    <section id="cities_and_trainstation">
+                        <section class="city_information">
+                            <p class="start_city">Ville de départ</p>
+                            <p class="end_city">Ville d'arrivée</p>
+                        </section>
+                        <section class="trainstation_information">
+                            <p class="start_trainstation">Gare de départ</p>
+                            <p class="end_trainstation">Gare d'arrivée</p>
+                        </section>
+                    </section>
+                    <section class="other_information">
+                        <section class="date_and_time">
+                            <p class="date">Date</p>
+                            <p class="start_time">Horaire départ</p>
+                            <p class="end_time">Horaire d'arrivée</p>
+                        </section>
+                        <section class="tarif_and_command">
+                            <p class="tarif">Tarif</p>
+                            <p class="young_tarif">Tarif réduit</p>
+                            <button class="add_to_kart">Ajouter au panier</button>
+                        </section>
+                    </section>
+                </section>
+            </article>  -->
+
+
+        </section>
+    </main>
+
+    <footer>
+        <div id="footerContainer">
+            <div class ="contact_box_container">
+                <h3>Nous contacter :</h3>
+                <div class ="mail_box_container">
+                    <img class ="img_footer" src="../media/img/email-open.png" alt="mail"/>
+                    <a class ="lien_footer" href="mailto:sylvain.gauche@univ-grenoble-alpes.fr">sylvain.gauche@univ-grenoble-alpes.fr</a>
+                </div>
+                <div class ="phone_box_container">
+                    <img class ="img_footer"src="../media/img/phone.png" alt="phone"/>
+                    <p>+33 6 58 53 86 00</p>
+                </div>
+            </div>
+
+            <div class = "faq_box_container">
+
+                <h3>A propos :</h3>
+                <a class ="lien_footer" href = "./self_presentation.html">Qui sommes nous ? </a>
+                <a class ="lien_footer" href = "./faq.html">Questions récurrentes (FAQ)</a>
+            </div>
+
+            <div class = "copyright_box_container">
+
+                <h3>Mentions légales :</h3>
+                <a class ="lien_footer" href = "./CGU_CGV.html">CGU & CGV</a>
+            </div> 
+        </div>
+
+    </footer>
+    <script src="../JS/user.js"></script>
+    <script src="../JS/tickets.js"></script>
+</body>
